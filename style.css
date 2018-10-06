@@ -1,0 +1,49 @@
+body{
+    background-color: aquamarine;
+}
+main{
+    width: 1000px;
+    margin:0 auto;
+    background-color: white;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+article>ul{
+    display: flex;
+    justify-content: space-around;
+}
+li>ul{
+    padding: 10px;
+}
+section{
+    margin: 10px 0;
+}
+#expirience>section{
+    display: flex;
+    justify-content: center;
+}
+#expirience>section>article{
+    width: 250px;
+    text-align: center;
+    margin: 0 20px;
+    border:1px solid black;
+    padding: 10px;
+}
+#expirience>section>article>div{
+    cursor: default;
+    border-bottom: 1px black solid;
+}
+#expirience>section>article>div:last-child{
+    border-bottom:none;
+}
