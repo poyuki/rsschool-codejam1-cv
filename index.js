@@ -33,3 +33,13 @@ function controlSlider(direction, event) {
         }
     }
 }
+jQuery("document").ready(function(){
+    $(window).scroll(function () {
+        console.log($(this).scrollTop());
+        if ($(this).scrollTop() > 142) {
+            $('#side-menu').removeClass("invisible");
+        } else {
+            $('#side-menu').addClass("invisible");
+        }
+    });
+});
