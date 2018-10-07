@@ -22,16 +22,13 @@
                     <a href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a href="#experience">Experince</a>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li>
                     <a href="#education">Education</a>
                 </li>
                 <li>
-                    <a href="#english">English</a>
-                </li>
-                <li>
-                    <a href="#code">Code</a>
+                    <a href="#code">Code examples</a>
                 </li>
                 <li>
                     <a href="#summary">Summary</a>
@@ -177,15 +174,83 @@
                 <div title="Specialisation">Technician Builder</div>
             </article>
         </section>
-        <section id="english" class="wrap-sections"></section>
-        <section id="code" class="wrap-sections"></section>
+        <h2>Code examples</h2>
+        <section id="code" class="wrap-sections">
+            <h3>Event slider</h3>
+            <div class="slider-wrapper">
+                <div class="slider view-box">
+                    <div class="slider slider-content">
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                        <div>
+                            <div>Event name</div>
+                            <div>
+                                <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                            </div>
+                            <div>Event description</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider control left-slider-control">
+                    <svg width="30" height="60" class="svg-hover left invisible" onclick="controlSlider('left',event)">
+                        <path stroke="grey" stroke-width="1" d="M 30,0 L 0,30 M 0,30 L 30,60"/>
+                    </svg>
+                </div>
+                <div class="slider control right-slider-control">
+                    <svg width="30" height="60" class="svg-hover right" onclick="controlSlider('right',event)">
+                        <path stroke="grey" stroke-width="1" d="M 0,0 L 30,30 M 30,30 0,60"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <h2>Contacts</h2>
         <section id="contacts" class="wrap-sections">
-            <address></address>
+            <address>
+                <div>Phone number: +375(29)862-53-37</div>
+                <div>Email address: poyuki9@gmail.com</div>
+                <div>
+                    <a href="https://jobs.tut.by/resume/3c10ba60ff042a54670039ed1f4b7538374576">Curriculum vitae on jobs.tut.by</a>
+                </div>
+            </address>
         </section>
     </content>
     <footer>
     </footer>
 </main>
+<script src="./jquery-3.3.1.js"></script>
 <script src="./index.js"></script>
 </body>
 </html>
