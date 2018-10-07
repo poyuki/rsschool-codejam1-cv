@@ -1,10 +1,23 @@
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: goldenrod;
+}
 body{
     background-color: aquamarine;
+    font-family: "Helvetica", "Tahoma", sans-serif;
 }
 main{
     width: 1000px;
     margin:0 auto;
     background-color: white;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    box-sizing: border-box;
 }
 ul{
     list-style: none;
@@ -12,38 +25,81 @@ ul{
 }
 nav>ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-transform: uppercase;
+}
+nav>ul>li{
+    border-right: 1px solid black;
+}
+nav>ul>li>a{
+    padding:0 10px;
+}
+nav>ul>li>a:hover{
+    color:goldenrod;
+    background-color: aquamarine;
+}
+nav>ul>li:last-child{
+    border-right: none;
 }
 nav a{
     text-decoration: none;
     color: black;
 }
-article>ul{
+
+section#skills{
     display: flex;
     justify-content: space-around;
 }
-li>ul{
+section#skills article{
+    width: 25%;
+    padding: 0 50px;
+    border-right: 1px solid black;
+}
+section#skills article:last-child{
+    border: none;
+}
+i.fa-plus+.hidden{
+    display: none;
+}
+.fs-08{
+    font-size: 0.8em;
+}
+i.fas{
+    cursor: pointer;
+}
+i.fas:hover{
+    color: goldenrod;
+}
+#technology li>ul{
     padding: 10px;
 }
 section{
     margin: 10px 0;
 }
-#expirience>section{
+#work,#freelance,#study-projects{
     display: flex;
     justify-content: center;
 }
-#expirience>section>article{
+.experience-article{
     width: 250px;
     text-align: center;
     margin: 0 20px;
     border:1px solid black;
     padding: 10px;
 }
-#expirience>section>article>div{
+.experience-article>div{
     cursor: default;
     border-bottom: 1px black solid;
 }
-#expirience>section>article>div:last-child{
+.experience-article>div:last-child{
     border-bottom:none;
+
+}
+.wrap-sections{
+    padding-bottom: 10px;
+    border-bottom: solid 1px black;
+}
+section#education{
+    display: flex;
+    justify-content: center;
 }
