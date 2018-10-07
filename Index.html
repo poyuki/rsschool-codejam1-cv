@@ -6,17 +6,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
           crossorigin="anonymous">
-    <script src="./index.js"></script>
     <title>Kiryl Poyu curriculum vitae</title>
 </head>
 <body>
 <main>
-    <header>
+    <header id="start-anchor">
         <h1>Kiryl Poyu Curriculum Vitae</h1>
-        <nav>
+        <nav id="main-menu">
             <ul>
                 <li>
-                    <a href="#bio">Biography</a>
+                    <a href="#summary-n-about">Summary & About</a>
                 </li>
                 <li>
                     <a href="#skills">Skills</a>
@@ -31,24 +30,24 @@
                     <a href="#code">Code examples</a>
                 </li>
                 <li>
-                    <a href="#summary">Summary</a>
-                </li>
-                <li>
                     <a href="#contacts">Contacts</a>
                 </li>
             </ul></nav>
     </header>
     <content>
-        <section id="bio" class="wrap-sections">
-            <figure>
-                <img src="" alt="My photo">
-                <figcaption>Kiryl Poyu</figcaption>
-            </figure>
-            <article id="about"></article>
+        <h2 id="summary-n-about">Summary & About</h2>
+        <section class="wrap-sections">
+            <article id="summary">
+                I am hardworking, fast learning, responsible and able to work in a team.
+                Ready to figure out everything you need.
+                I have experience in the development and maintenance of projects on various Web technologies.
+                I strive to improve my skills and learn new things.
+            </article>
+            <img src="MyPhoto.jpg" width="800" height="533" alt="My photo">
+
         </section>
-        <section id="summary" class="wrap-sections"></section>
-        <h2>Skills</h2>
-        <section id="skills" class="wrap-sections">
+        <h2 id="skills">Skills</h2>
+        <section class="wrap-sections">
             <article id="languages">
                 <h4>Languages</h4>
                 <ul>
@@ -101,8 +100,8 @@
                 </ul>
             </article>
         </section>
-        <h2>Experience</h2>
-        <section id="experience" class="wrap-sections">
+        <h2 id="experience">Experience</h2>
+        <section class="wrap-sections">
             <h3>Work places</h3>
             <section id="work">
                 <article id="SSS" class="experience-article">
@@ -156,8 +155,8 @@
                 </article>
             </section>
         </section>
-        <h2>Education</h2>
-        <section id="education" class="wrap-sections">
+        <h2 id="education">Education</h2>
+        <section class="wrap-sections">
             <article class="experience-article">
                 <div title="Place">Belarusian State University</div>
                 <div title="Standing">2013-2017</div>
@@ -174,8 +173,8 @@
                 <div title="Specialisation">Technician Builder</div>
             </article>
         </section>
-        <h2>Code examples</h2>
-        <section id="code" class="wrap-sections">
+        <h2 id="code">Code examples</h2>
+        <section class="wrap-sections">
             <h3>Event slider</h3>
             <div class="slider-wrapper">
                 <div class="slider view-box">
@@ -235,9 +234,161 @@
                     </svg>
                 </div>
             </div>
+            <h3>Slider code</h3>
+            <div id="code-example-wrap">
+                <div id="html-example-wrap">
+                    <h4>HTML</h4>
+                    <code>
+                        <textarea class="code-examp html-code-examp" name="html code example" id="html-code-examp" cols="30" rows="20" readonly>
+<div class="slider-wrapper">
+    <div class="slider view-box">
+        <div class="slider slider-content">
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+            <div>
+                <div>Event name</div>
+                <div>
+                    <img src="event-thumbs.png" width="116" height="116" alt="event image">
+                </div>
+                <div>Event description</div>
+            </div>
+        </div>
+    </div>
+    <div class="slider control left-slider-control">
+        <svg width="30" height="60" class="svg-hover left invisible" onclick="controlSlider('left',event)">
+            <path stroke="grey" stroke-width="1" d="M 30,0 L 0,30 M 0,30 L 30,60"/>
+        </svg>
+    </div>
+    <div class="slider control right-slider-control">
+        <svg width="30" height="60" class="svg-hover right" onclick="controlSlider('right',event)">
+            <path stroke="grey" stroke-width="1" d="M 0,0 L 30,30 M 30,30 0,60"/>
+        </svg>
+    </div>
+</div>
+                        </textarea>
+                    </code>
+                </div>
+                <div id="css-example-wrap">
+                    <h4>CSS</h4>
+                    <code>
+                        <textarea class="code-examp" name="css code example" id="css-code-examp"  cols="30" rows="20" readonly>
+.slider-wrapper{
+    position: relative;
+    width: 100%;
+    height:255px;
+}
+.slider{
+    position: absolute;
+}
+.view-box{
+    top:0;
+    left:30px;
+    width:900px;
+    height:100%;
+    overflow: hidden;
+}
+.slider-content{
+    display: flex;
+}
+.left-slider-control{
+    left:0;
+    top:90px;
+}
+.right-slider-control{
+    right:0;
+    top:90px;
+}
+.slider-content>div{
+    min-width:205px;
+    height: 250px;
+    margin:0 10px;
+    border: 1px solid gainsboro;
+    border-radius: 20px ;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+
+}
+.invisible{
+    display: none;
+}
+.svg-hover{
+    cursor: pointer;
+}
+.svg-hover:hover>path{
+    stroke: goldenrod;
+}
+                        </textarea>
+                    </code>
+                </div>
+                <div id="js-example-wrap">
+                    <h4>JavaScript(jQuery)</h4>
+                    <code>
+                        <textarea class="code-examp" name="js code example" id="js-code-examp"  cols="30" rows="20" readonly>
+function controlSlider(direction, event) {
+    let controlButton=$(event.currentTarget),
+        opositeDirection=direction==='right'?'left':'right',
+        opositeControlButton=$(`svg.${opositeDirection}`),
+        slider=$('.slider-content'),
+        leftPos=parseInt(slider.css('left')),
+        rightPos=parseInt(slider.css('right')),
+        toMove=225;
+    if (!slider.is(':animated')) {
+        switch (direction) {
+            case 'right':
+                if (rightPos + toMove === 0) controlButton.hide();
+                opositeControlButton.show();
+                slider.animate({'left': `${leftPos - toMove}px`}, 500);
+                break;
+            case 'left':
+                if (leftPos + toMove === 0) controlButton.hide();
+                opositeControlButton.show();
+                slider.animate({'left': `${leftPos + toMove}px`}, 500);
+                break;
+        }
+    }
+}
+
+                        </textarea>
+                    </code>
+                </div>
+            </div>
         </section>
-        <h2>Contacts</h2>
-        <section id="contacts" class="wrap-sections">
+        <h2 id="contacts">Contacts</h2>
+        <section class="wrap-sections">
             <address>
                 <div>Phone number: +375(29)862-53-37</div>
                 <div>Email address: poyuki9@gmail.com</div>
@@ -247,10 +398,23 @@
             </address>
         </section>
     </content>
-    <footer>
+    <footer id="end-anchor">
+        <small>Good man, who want made a good stuffs - Kiryl Poyu</small>
     </footer>
+    <nav id="side-menu" class="invisible">
+        <ul>
+            <li><a href="#start-anchor">Start of page</a></li>
+            <li><a href="#summary-n-about">Summary & About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#code">Code examples</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#end-anchor">End of page</a></li>
+        </ul>
+    </nav>
 </main>
-<script src="./jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="./index.js"></script>
 </body>
 </html>
