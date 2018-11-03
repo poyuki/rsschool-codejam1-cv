@@ -2,41 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
           crossorigin="anonymous">
     <title>Kiryl Poyu curriculum vitae</title>
 </head>
 <body>
-<main>
+<div id="main-wrapper">
     <header id="start-anchor">
         <h1>Kiryl Poyu Curriculum Vitae</h1>
         <nav id="main-menu">
-            <ul>
-                <li>
-                    <a href="#summary-n-about">Summary & About</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-                <li>
-                    <a href="#code">Code examples</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul></nav>
+            <a href="#summary-n-about">Summary & About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#code">Code examples</a>
+            <a href="#contacts">Contacts</a>
+        </nav>
     </header>
-    <content>
-        <h2 id="summary-n-about">Summary & About</h2>
-        <section class="wrap-sections">
+    <main>
+        <section class="wrap-sections" id="summary-n-about">
+            <h2>Summary & About</h2>
             <article id="summary">
                 I am hardworking, fast learning, responsible and able to work in a team.
                 Ready to figure out everything you need.
@@ -44,10 +31,10 @@
                 I strive to improve my skills and learn new things.
             </article>
             <img src="assets/image/MyPhoto.jpg" width="800" height="533" alt="My photo">
-
         </section>
-        <h2 id="skills">Skills</h2>
-        <section class="wrap-sections">
+        <section class="wrap-sections" id="skills">
+            <h2>Skills</h2>
+            <div class="flex-wrapper flex-space-around">
             <article id="languages">
                 <h4>Languages</h4>
                 <ul>
@@ -99,12 +86,14 @@
                     <li>Toad</li>
                 </ul>
             </article>
+            </div>
         </section>
-        <h2 id="experience">Experience</h2>
-        <section class="wrap-sections">
-            <h3>Work places</h3>
+        <section class="wrap-sections" id="experience">
+            <h2>Experience</h2>
             <section id="work">
-                <article id="SSS" class="experience-article">
+                <h3>Work places</h3>
+                <div class="flex-wrapper flex-just-center">
+                <article class="experience-article" id="SSS">
                     <div class="work-name" title="Work place name">SaleServiSolutions</div>
                     <div class="position" title="Position">Software engineer</div>
                     <div class="standing" title="Standing">March 2018 till this moment</div>
@@ -112,7 +101,7 @@
                     <div class="projects" title="Project at work">ERP, Web Application for payment system</div>
                     <div class="tech-at-work" title="Technologies at work">Spring,SVN, PL/SQL</div>
                 </article>
-                <article id="NBSC" class="experience-article">
+                <article class="experience-article" id="NBSC">
                     <div class="work-name" title="Work place name">National Bank Settlement Center</div>
                     <div class="position" title="Position">Software engineer</div>
                     <div class="standing" title="Standing">April 2017 - March 2018</div>
@@ -120,10 +109,12 @@
                     <div class="projects" title="Project at work">Statistic and Reporting Web and Desktop system</div>
                     <div class="tech-at-work" title="Technologies at work">WinForm, ASP.Net, ADO.Net, TFS,DevExpress XtraReport, DevExtreme,jQuery</div>
                 </article>
+                </div>
             </section>
-            <h3>Freelance projects</h3>
             <section id="freelance">
-                <article id="stroytech" class="experience-article">
+                <h3>Freelance projects</h3>
+                <div class="flex-wrapper flex-just-center">
+                <article class="experience-article" id="stroytech">
                     <div class="proj-name" title="project name">СтройТехника</div>
                     <div class="project" title="project conception">Active Internet Search Platforms of construction engineering</div>
                     <div class="work-type" title="Type of project">Maintenance</div>
@@ -133,30 +124,34 @@
                         <a href="https://xn--80ajjchqepikd1b.xn--90ais">Link on project</a>
                     </div>
                 </article>
-                <article id="musials" class="experience-article">
+                <article class="experience-article" id="musials">
                     <div class="proj-name" title="Project name">Территория мюзикла</div>
-                    <div class="ptoject" title="Project conception">Custom theme development with design solution</div>
+                    <div class="project" title="Project conception">Custom theme development with design solution</div>
                     <div class="work-type" title="Type of project">Development</div>
                     <div class="duties" title="Duties on project">Full Web Application development</div>
                     <div class="tech-at-proj" title="Technologies used on the project">Wordpress, jQuery</div>
                     <div class="project-link">
-                        <span>Project in development. Link be later</span>
+                        <a href="https://musicals.loiko.by">Link on project</a>
                     </div>
                 </article>
+                </div>
             </section>
-            <h3>Study projects</h3>
             <section id="study-projects">
-                <article id="asp" class="experience-article">
-                    <div class="ptoject" title="Project conception">Web Application for Event Plaining</div>
+                <h3>Study projects</h3>
+                <div class="flex-wrapper flex-just-center">
+                <article class="experience-article" id="asp">
+                    <div class="study-ptoject" title="Project conception">Web Application for Event Plaining</div>
                     <div class="tech-at-proj" title="Technologies used on the project">ASP.Net Core, Entity Framework Core, jQuery</div>
                     <div class="project-link">
                         <a href="https://github.com/poyuki/EventPlaining">Link on project repository</a>
                     </div>
                 </article>
+                </div>
             </section>
         </section>
-        <h2 id="education">Education</h2>
-        <section class="wrap-sections">
+        <section class="wrap-sections" id="education">
+            <h2>Education</h2>
+            <div class="flex-wrapper flex-just-center">
             <article class="experience-article">
                 <div title="Place">Belarusian State University</div>
                 <div title="Standing">2013-2017</div>
@@ -172,13 +167,14 @@
                 <div title="Speciality">Industrial and Civil Engineering</div>
                 <div title="Specialisation">Technician Builder</div>
             </article>
+            </div>
         </section>
-        <h2 id="code">Code examples</h2>
-        <section class="wrap-sections">
+        <section class="wrap-sections" id="code">
+            <h2>Code examples</h2>
             <h3>Event slider</h3>
             <div class="slider-wrapper">
                 <div class="slider view-box">
-                    <div class="slider slider-content">
+                    <div class="slider slider-content flex-wrapper">
                         <div>
                             <div>Event name</div>
                             <div>
@@ -224,12 +220,12 @@
                     </div>
                 </div>
                 <div class="slider control left-slider-control">
-                    <svg width="30" height="60" class="svg-hover left invisible" onclick="controlSlider('left',event)">
+                    <svg class="svg-hover left invisible" width="30" height="60" onclick="controlSlider('left',event)">
                         <path stroke="grey" stroke-width="1" d="M 30,0 L 0,30 M 0,30 L 30,60"/>
                     </svg>
                 </div>
                 <div class="slider control right-slider-control">
-                    <svg width="30" height="60" class="svg-hover right" onclick="controlSlider('right',event)">
+                    <svg class="svg-hover right" width="30" height="60" onclick="controlSlider('right',event)">
                         <path stroke="grey" stroke-width="1" d="M 0,0 L 30,30 M 30,30 0,60"/>
                     </svg>
                 </div>
@@ -288,12 +284,12 @@
         </div>
     </div>
     <div class="slider control left-slider-control">
-        <svg width="30" height="60" class="svg-hover left invisible" onclick="controlSlider('left',event)">
+        <svg class="svg-hover left invisible" width="30" height="60" onclick="controlSlider('left',event)">
             <path stroke="grey" stroke-width="1" d="M 30,0 L 0,30 M 0,30 L 30,60"/>
         </svg>
     </div>
     <div class="slider control right-slider-control">
-        <svg width="30" height="60" class="svg-hover right" onclick="controlSlider('right',event)">
+        <svg class="svg-hover right" width="30" height="60" onclick="controlSlider('right',event)">
             <path stroke="grey" stroke-width="1" d="M 0,0 L 30,30 M 30,30 0,60"/>
         </svg>
     </div>
@@ -387,9 +383,9 @@ function controlSlider(direction, event) {
                 </div>
             </div>
         </section>
-        <h2 id="contacts">Contacts</h2>
-        <section class="wrap-sections">
-            <address>
+        <section class="wrap-sections" id="contacts">
+            <h2>Contacts</h2>
+            <address class="flex-wrapper flex-space-between">
                 <div>Phone number: +375(29)862-53-37</div>
                 <div>Email address: poyuki9@gmail.com</div>
                 <div>
@@ -397,23 +393,21 @@ function controlSlider(direction, event) {
                 </div>
             </address>
         </section>
-    </content>
+    </main>
     <footer id="end-anchor">
         <small>Good man, who want made a good stuffs - Kiryl Poyu</small>
     </footer>
-    <nav id="side-menu" class="invisible">
-        <ul>
-            <li><a href="#start-anchor">Start of page</a></li>
-            <li><a href="#summary-n-about">Summary & About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#code">Code examples</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#end-anchor">End of page</a></li>
-        </ul>
+    <nav class="invisible" id="side-menu">
+        <a href="#start-anchor">Start of page</a>
+        <a href="#summary-n-about">Summary & About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#code">Code examples</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#end-anchor">End of page</a>
     </nav>
-</main>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="assets/js/index.js"></script>
 </body>
